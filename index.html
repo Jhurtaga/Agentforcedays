@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHouse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://media.istockphoto.com/id/541823470/photo/patriotic-neighborhood.jpg?s=612x612&w=0&k=20&c=2gi2oa8idEhhxoVcCvUlFDfvZwgLQMzhvoms9rnnrNU=') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 10px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .showcase {
+            min-height: 400px;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            color: #fff;
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .content {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            margin-top: 20px;
+        }
+        .search-bar {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .search-bar input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .listings {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .listing {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            width: 30%;
+        }
+        .listing img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .listing-details {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>DreamHouse</h1>
+                <img src="https://trailhead.salesforce.com/trailblazer-community/download/file/0694V00000TSeJAQA1" alt="DreamHouse Logo" style="width: 100px; height: auto;">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">My Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>Welcome to DreamHouse</h1>
+            <p>You dream the house. We make it happen.</p>
+        </div>
+    </section>
+
+    <section class="search-bar">
+        <input type="text" placeholder="Address, City, Zip or Neighborhood">
+    </section>
+
+    <section class="content container">
+        <h2>Newest Listings</h2>
+        
+        <div class="listings">
+            
+            <!-- Example Listing -->
+            <div class="listing">
+                <img src="https://s3-us-west-2.amazonaws.com/dev-or-devrl-s3-bucket/sample-apps/realty/house05.jpg" alt="House Image">
+                <div class="listing-details">
+                    <h3>Stunning Victorian</h3>
+                    <p><strong>Price:</strong> $975,000</p>
+                    <p><strong>Baths:</strong> 3</p>
+                    <p><strong>Beds:</strong> 4</p>
+                    <p><strong>Address:</strong> 18 Henry St, Cambridge, MA</p>
+                </div>
+            </div>
+
+            <!-- Example Listing -->
+            <div class="listing">
+                <img src="https://s3-us-west-2.amazonaws.com/dev-or-devrl-s3-bucket/sample-apps/realty/house01.jpg" alt="House Image">
+                <div class="listing-details">
+                    <h3>Ultimate Sophistication</h3>
+                    <p><strong>Price:</strong> $1,200,000</p>
+                    <p><strong>Baths:</strong> 4</p>
+                    <p><strong>Beds:</strong> 5</p>
+                    <p><strong>Address:</strong> 24 Pearl St, Cambridge, MA</p>
+                </div>
+            </div>
+
+            <!-- Example Listing -->
+            <div class="listing">
+                <img src="https://s3-us-west-2.amazonaws.com/dev-or-devrl-s3-bucket/sample-apps/realty/house02.jpg" alt="House Image">
+                <div class="listing-details">
+                    <h3>Modern City Living</h3>
+                    <p><strong>Price:</strong> $825,000</p>
+                    <p><strong>Baths:</strong> 4</p>
+                    <p><strong>Beds:</strong> 5</p>
+                    <p><strong>Address:</strong> 72 Francis St, Boston, MA</p>
+                </div>
+            </div>
+
+            <!-- Example Listing -->
+            <div class="listing">
+                <img src="https://s3-us-west-2.amazonaws.com/dev-or-devrl-s3-bucket/sample-apps/realty/house03.jpg" alt="House Image">
+                <div class="listing-details">
+                    <h3>Stunning Colonial</h3>
+                    <p><strong>Price:</strong> $930,000</p>
+                    <p><strong>Baths:</strong> 4</p>
+                    <p><strong>Beds:</strong> 5</p>
+                    <p><strong>Address:</strong> 32 Prince St, Cambridge, MA</p>
+                </div>
+            </div>
+
+            <!-- Example Listing -->
+            <div class="listing">
+                <img src="https://s3-us-west-2.amazonaws.com/dev-or-devrl-s3-bucket/sample-apps/realty/house04.jpg" alt="House Image">
+                <div class="listing-details">
+                    <h3>Waterfront in the City</h3>
+                    <p><strong>Price:</strong> $850,000</p>
+                    <p><strong>Baths:</strong> 2</p>
+                    <p><strong>Beds:</strong> 3</p>
+                    <p><strong>Address:</strong> 110 Baxter Street, Boston, MA</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DWU00000GGsEZ',
+				'Google_Site',
+				'https://orgfarm-4216098158.my.site.com/ESWGoogleSite1739269040149',
+				{
+					scrt2URL: 'https://orgfarm-4216098158.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-4216098158.my.site.com/ESWGoogleSite1739269040149/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>
